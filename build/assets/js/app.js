@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+window.sr=ScrollReveal(),$(function(){menu=$("nav ul"),$("#toggle-btn").on("click",function(n){n.preventDefault(),menu.slideToggle()}),$(window).resize(function(){580<$(this).width()&&menu.is(":hidden")&&menu.removeAttr("style")}),$("nav li").on("click",function(n){$(window).width()<580&&menu.slideToggle()}),$(".open-menu").height($(window).height())});
