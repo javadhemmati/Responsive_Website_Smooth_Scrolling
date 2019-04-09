@@ -1,0 +1,19 @@
+/* #### overview #### */
+
+#overview
+  background: #282627
+  padding: 8rem 0
+  outline: none
+
+  .overview-content
+    display: grid
+    grid-gap: 80px
+    grid-template-columns: repeat(2, 1fr)
+    text-align: left
+
+    @media screen and ( max-width: 580px)
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: repeat(1, 1fr)
+      text-align: center
+

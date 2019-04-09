@@ -1,0 +1,83 @@
+/* #### fixed navigation #### */
+
+nav
+  height: 60px
+  width: 100%
+  background-color: #343233
+  position: fixed
+  top: 0
+
+  @media screen and ( max-width: 580px)
+    height: auto
+    border-bottom: 0
+
+  ul
+    padding: 0
+    margin: 0
+  
+    @media screen and ( max-width: 580px)
+      display: none
+      height: auto
+
+    li
+      display: inline
+      float: left
+    
+      @media screen and ( max-width: 580px)
+        width: 100%
+        float: left
+        position: relative
+
+  a
+    display: inline-block
+    width: 100px
+    font-weight: 400
+    text-align: center
+    text-decoration: none
+    padding: 20px 0
+    color: #8d8273
+    transition: 1s
+
+    @media screen and ( max-width: 580px)
+      text-align: left
+      width: 100%
+      text-indent: 25px
+      background: #282627
+      color: #8d8273
+
+    &:hover
+      color: #6c6c6c
+
+      @media screen and ( max-width: 580px)
+        color: #6c6c6c
+    
+  #toggle-btn
+    display: none
+  
+    @media screen and ( max-width: 580px)
+      display: block
+      background: #282627
+      color: #8d8273
+      width: 100%
+      position: relative
+      
+      &:after
+        content: "|||"
+        transform: rotate(-90deg)
+        width: 40px
+        height: 40px
+        display: inline-block
+        position: absolute
+        right: 5px
+        top: 20px
+
+.menu
+  @media screen and ( max-width: 580px)
+    zoom: 1 
+    
+    &:before , &:after
+      content: ""
+      display: table
+  
+    &:after
+      clear: both
