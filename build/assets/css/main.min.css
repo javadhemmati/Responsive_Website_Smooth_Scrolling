@@ -250,10 +250,12 @@ a {
     color: #F012BE; }
 
 ::selection {
-  background: #FFF498; }
+  background: #ffd152;
+  color: #eee; }
 
 ::-moz-selection {
-  background: #FFF498; }
+  background: #ffd152;
+  color: #eee; }
 
 img::selection {
   background: transparent; }
@@ -483,3 +485,86 @@ nav {
   @media screen and (max-width: 580px) {
     .section-hero p {
       display: none; } }
+
+/* #### overview #### */
+#overview {
+  background: #282627;
+  padding: 8rem 0; }
+  #overview .overview-content {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left; }
+    @media screen and (max-width: 580px) {
+      #overview .overview-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center; } }
+
+/* #### about #### */
+#about {
+  padding: 8rem 0; }
+  #about i {
+    font-size: 14px; }
+  #about h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 12px;
+    margin-bottom: 2em; }
+
+/* #### features #### */
+#features {
+  background: #282627;
+  padding: 8em 0; }
+  #features .features-content {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left; }
+    #features .features-content p {
+      margin: 0; }
+    #features .features-content h2 {
+      margin-top: 0;
+      margin-bottom: 0; }
+    @media screen and (max-width: 580px) {
+      #features .features-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center; } }
+
+/* #### subscribe #### */
+#subscribe {
+  background: #343233;
+  padding: 8em 0; }
+  #subscribe h2 {
+    color: #8d8273; }
+  #subscribe input {
+    width: 80%;
+    margin: 2em 0;
+    background: none;
+    border: 1px solid #8d8273;
+    padding: 20px;
+    font-weight: 400;
+    color: #d3a564; }
+    #subscribe input:focus {
+      border: none;
+      outline: none;
+      border: 2px solid #8d8273; }
+    #subscribe input::placeholder {
+      color: #8d8273;
+      text-transform: uppercase;
+      font-weight: 400; }
+
+/* #### footer #### */
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0;
+  background: #282627; }
+  footer span {
+    color: #8d8273;
+    font-weight: 600; }
